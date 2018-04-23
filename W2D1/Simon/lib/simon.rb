@@ -71,3 +71,8 @@ class Simon
     @game_over = false
   end
 end
+
+if __FILE__ == $PROGRAM_NAME
+  sim = Simon.new
+  sim.play
+end
