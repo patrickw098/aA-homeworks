@@ -75,6 +75,7 @@ class Play
 end
 
 class Playwright
+  attr_accessor :name, :birth_year
 
   def self.all
     data = PlayDBConnection.instance.execute("SELECT * FROM playwrights")
