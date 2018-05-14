@@ -1,0 +1,25 @@
+<nav style="float:right">
+  <a href="<%=band_url(@band)%>">Back</a>
+</nav>
+
+<h2>
+  Editting <%=@band.name%>...
+</h2>
+
+<form action="<%= band_url(@band) %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <%= auth_token %>
+  <label for="band name">
+    Band Name:
+    <input type="text" name="band[name]" value="<%=@band.name%>">
+  </label>
+
+  <input type="submit" value="Edit Band!">
+</form>
+
+<form action="<%= band_url %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <%= auth_token %>
+
+  <input type="submit" value="Delete Band">
+</form>

@@ -1,0 +1,28 @@
+<nav style="float:right">
+  <a href="<%=band_url(params[:band_id])%>">Back to Bands</a>
+</nav>
+
+<h2>
+  Add Album!
+</h2>
+<form action="<%= albums_url %>" method="post">
+  <%= auth_token %>
+  <label for="title">
+    Album Title:
+    <input type="text" name="album[title]" value="<%=@album.title%>">
+  </label>
+  <br>
+  <label for="year">
+    Year:
+    <input type="integer" name="album[year]" value="<%=@album.year%>">
+  </label>
+  <br>
+  <label for="live">
+    <input type="radio" name="album[live]" value=true <%="checked" if @album.live == true %> > Live
+    <input type="radio" name="album[live]" value=false <%="checked" if @album.live == false %> > Studio
+  </label>
+
+  <br>
+  <input type="submit" value="Add Album!">
+
+</form>

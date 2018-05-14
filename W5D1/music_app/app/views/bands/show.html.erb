@@ -1,0 +1,25 @@
+<nav style="float:right">
+  <a href="<%=bands_url%>">Back to Bands</a>
+  <a href="<%=edit_band_url%>">Edit Band</a>
+</nav>
+<h2>
+  Yo, I heard you like <%= @band.name %>...
+</h2>
+
+<h3>
+  Check out these cool albums!
+</h3>
+<% al = @band.albums.includes(:band).order(:year) %>
+<div>
+  <ul>
+  <% al.each do |album| %>
+    <li>
+      <a href="<%=album_url(album.id)%>"><%= album.title %></a>
+    </li>
+    <br>
+  <% end %>
+  <ul>
+</div>
+
+<br>
+<a align="left" href="<%=new_band_album_url(@band)%>">Add Album</a>

@@ -1,0 +1,17 @@
+<nav style="float:right">
+  <a href="<%=bands_url%>">Back to Bands</a>
+</nav>
+
+<h2>
+  What's your jam?
+</h2>
+<form action="<%= bands_url %>" method="post">
+  <%= auth_token %>
+  <label for="band name">
+    Band Name:
+    <input type="text" name="band[name]" value="<%=@band.name%>">
+  </label>
+
+  <input type="submit" value="Create Band!">
+
+</form>

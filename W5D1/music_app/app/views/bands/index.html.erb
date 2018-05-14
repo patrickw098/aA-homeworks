@@ -1,0 +1,13 @@
+<nav style="float:right">
+  <a href="<%= new_band_url %>">Add New Band!</a>
+</nav>
+<h2>
+  Check out these coool bands~~~
+</h2>
+<ul>
+  <% @bands.each do |band| %>
+    <li>
+      <a href="<%=band_url(band.id)%>"><%=band.name%></a>
+    </li>
+  <% end %>
+</ul>
