@@ -1,0 +1,139 @@
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+header {
+  font-family: 'Song Myung', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.index-header {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #236875;
+  color: white;
+  border-bottom: 30px solid white;
+}
+
+
+.index-header h1{
+  width: 900px;
+  margin: auto;
+}
+
+header h2 {
+  display: block;
+}
+
+body {
+  position: relative;
+  font-family: sans-serif;
+  width: 100vw;
+}
+
+.sidebar-nav {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid black;
+  height: 900px;
+  background-color: white;
+}
+
+aside a {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+}
+
+aside a:last-child {
+  border-bottom: none;
+}
+
+.main-body {
+  width: 600px;
+  display: inline-block;
+  padding: 20px;
+}
+
+.splash {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+
+nav {
+}
+
+.splash-body {
+  height: 500px;
+  color: white;
+  text-align: center;
+}
+
+.splash-body h1{
+  font-size: 30px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin: 20px;
+  list-style: none;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #236875;
+  box-shadow: 3px 3px 3px black;
+  color: white;
+  cursor: pointer;
+}
+
+nav li:hover {
+  background-color: #228a9e;
+}
+
+.nav-list li:hover {
+  background-color: #204c33;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.foot-link {
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-left: 20px;
+}
+
+.index-header {
+  text-align: center;
+}
+
+.nav-list li {
+  background-color: #387f57;
+}
+
+footer {
+  text-align: center;
+}
+
+.image-container {
+  background-color: antiquewhite;
+  padding: 10px;
+  width: 50px;
+  border-radius: 10px;
+  height: 50px;
+  position: absolute;
+}
